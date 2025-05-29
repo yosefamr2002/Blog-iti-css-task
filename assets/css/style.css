@@ -254,6 +254,24 @@ nav ul {
     width: 75%;
 }
 
+/* ///////////////////////////////////////////////////////////// */
+/* latestposts */
+.latestposts .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.posts_cards__card{
+    width: 30%;
+}
+
+
+
 /* ///////////////////////////////////////////////////////// */
 @media(max-width: 768px) {
     h1 {
