@@ -256,6 +256,9 @@ nav ul {
 
 /* ///////////////////////////////////////////////////////////// */
 /* latestposts */
+.latestposts{
+    padding: 64px 0;
+}
 .latestposts .container {
     display: flex;
     flex-direction: column;
@@ -284,6 +287,38 @@ nav ul {
 
 .posts_cards__card h3 {
     padding-bottom: 16px;
+}
+
+.latestposts h2 {
+    color: var(--text--color--Dark-blue);
+
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* signup */
+.signup {
+    padding: 4rem 0;
+    background-color: var(--second--color);
+}
+
+.signup__content {
+    text-align: center;
+}
+
+.signup__content h3,
+.signup__content p {
+    color: var(--main-color);
+}
+
+.signup__content a {
+    background-color: var(--main-color);
+}
+
+.signup__content h3 {
+    padding-top: .5rem;
+    padding-bottom: 2rem;
 }
 
 /* ///////////////////////////////////////////////////////// */
