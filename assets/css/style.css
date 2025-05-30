@@ -13,12 +13,14 @@
 
     --main-color: #FFFFFF;
     --second--color: #2B63D9;
+    --footer-bg-color: #151b28;
+
 }
 
 /* general */
 
 .container {
-    padding: 0 5rem;
+    /* padding: 0 5rem; */
     width: 88%;
     margin: auto;
 }
@@ -212,14 +214,16 @@ nav ul {
 }
 
 .BlogPost .container {
-    justify-content: space-between;
+    gap: 2.5rem;
+    /* width: 88%; */
+    /* justify-content: space-between; */
     display: flex;
 }
 
 .BlogPost__opened {
     display: flex;
     flex-direction: column;
-    width: 49%;
+    /* width: 49%; */
 }
 
 .opened_photo {
@@ -233,7 +237,7 @@ nav ul {
 .BlogPost__other {
     display: flex;
     flex-direction: column;
-    width: 49%;
+    /* width: 49%; */
     justify-content: space-between;
 }
 
@@ -256,9 +260,10 @@ nav ul {
 
 /* ///////////////////////////////////////////////////////////// */
 /* latestposts */
-.latestposts{
+.latestposts {
     padding: 64px 0;
 }
+
 .latestposts .container {
     display: flex;
     flex-direction: column;
@@ -321,13 +326,89 @@ nav ul {
     padding-bottom: 2rem;
 }
 
+/* //////////////////////////////////////////////////////////////// */
+/* footer  */
+.footer {
+    background-color: var(--footer-bg-color);
+}
+
+.footer p {
+    color: var(--text--color--white);
+}
+
+.footer_wrapper {
+    padding: 6.4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo-col {
+    width: 26.8%;
+}
+
+.footer-logo {
+    width: 15rem;
+    height: 2.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.footer-logo-col p {
+    margin-bottom: 1.6rem;
+}
+
+.footer-logo-col form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-col input {
+    background-color: #2c3444;
+    color: var(--color-white);
+    padding: 1.2rem 1.6rem;
+    border-radius: 6px 0 0 6px;
+    border: none;
+}
+
+.footer-logo-col button {
+    padding: 1.2rem 1.8rem;
+    background-color: var(--second--color);
+    color: var(--text--color--white);
+    border-radius: 0 6px 6px 0;
+    border: none;
+}
+
+.footer_info__col p {
+    margin-bottom: 2.4rem;
+}
+
+.footer_info__col a {
+    color: #a5acba;
+    margin-bottom: 1.2rem;
+}
+
+.copywrite {
+    text-align: center;
+    padding: 3.2rem 0 6.4rem;
+    border-top: 1px solid #2e3545;
+}
+
 /* ///////////////////////////////////////////////////////// */
+/* responsive  */
+
+
 @media(max-width: 768px) {
+
+    /* general  */
+    .container {
+        width: 90%;
+    }
+
     h1 {
         font-size: 52px;
         line-height: 60px;
     }
 
+    /* nav  */
     nav .container {
         padding: 16px 16px;
     }
@@ -349,6 +430,7 @@ nav ul {
         display: block;
     }
 
+    /* hero  */
     .hero__content {
         width: 100%;
     }
@@ -362,11 +444,112 @@ nav ul {
         padding-bottom: 0px;
     }
 
+
+    /* order  */
+    .order {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* subscribe  */
+    .Subscribe {
+        order: 2;
+    }
+
+    .Subscribe .container {
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Subscribe__content {
+        width: 100%;
+    }
+
+    .Subscribe__emailbox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .emailbox {
+        width: 100%;
+    }
+
+    .Subscribe__emailbox input {
+        width: 80%;
+    }
+
+    /* blog post  */
+    .BlogPost .container {
+        gap: 2rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .BlogPost__opened {
+        width: 100%;
+    }
+
+    .BlogPost__other {
+        gap: 32px;
+        width: 100%;
+    }
+
+    .BlogPost .date {
+        margin-top: 0px;
+    }
+
+
+    /* latestposts  */
+    .latestposts .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .posts_cards__card {
+        width: 47%;
+    }
+
+    .latestposts .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    /* footer  */
+    .footer {
+        padding: 0 1.6rem;
+    }
+
+    .footer_wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo-col {
+        width: 100%;
+        padding-bottom: 6.8rem;
+    }
+
+    .footer-logo-col input {
+        width: 70%;
+    }
+
+    .copywrite {
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
 }
+
+
+
 
 @media(max-width:375px) {
     .container {
-        width: 100%;
+        width: 90%;
     }
 
     .hero__content {
@@ -381,5 +564,14 @@ nav ul {
     h1 {
         font-size: 36px;
         line-height: 44px;
+    }
+
+    .BlogPost__other__post {
+
+        flex-direction: column;
+    }
+
+    .other_photo {
+        width: 100%;
     }
 }
