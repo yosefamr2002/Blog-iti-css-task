@@ -265,12 +265,26 @@ nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 48px;
+
 }
-.posts_cards__card{
+
+.posts_cards__card {
     width: 30%;
 }
 
+.post__car_img {
+    padding-bottom: 16px;
+}
 
+.posts_cards__card .date {
+    padding-bottom: 8px;
+}
+
+.posts_cards__card h3 {
+    padding-bottom: 16px;
+}
 
 /* ///////////////////////////////////////////////////////// */
 @media(max-width: 768px) {
